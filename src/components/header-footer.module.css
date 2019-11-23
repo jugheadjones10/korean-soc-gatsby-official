@@ -1,0 +1,40 @@
+.navigation {
+  padding: 40px 130px;
+  transition: .3s ease;
+  background-color: #ffffff;
+}
+
+/* For the decrease size animation */
+/* Below need to work with Javascript */
+.navigation.nav-bg {
+  background-color: #ffffff;
+  padding: 15px 100px;
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    padding: 20px;
+    background: #ffffff;
+  }
+}
+
+@media (max-width: 991px) {
+  .navigation.nav-bg {
+    padding: 15px 20px;
+  }
+}
+
+/* Same animation doesn't play */
+.nav-link:hover{
+  font-size: 20px;
+} 
+
+.nav-link {
+  font-family: "BwNistaInt-xBd";
+  padding: 15px;
+}
+
+/* Footer */
+.bg-dark {
+  background-color: #000000 !important;
+}

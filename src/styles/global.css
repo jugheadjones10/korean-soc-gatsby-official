@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
+@font-face {
+  font-family: 'BwNistaInt-xBd';
+  src: url("../fonts/BwNistaInt-xBd.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.font-secondary {
+  font-family: "Playfair Display", serif !important;
+}
+
+.section{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-title {
+  margin-bottom: 80px;
+  font-family: "BwNistaInt-xBd";
+}
+
+body {  
+  color: #4c4c4c;
+  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+p, .paragraph {
+  font-weight: 400;
+  color: #4c4c4c;
+  font-size: 15px;
+  line-height: 1.8;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Playfair Display", serif;
+}
+
+p-lg, .paragraph-lg {
+  font-size: 22px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+@media (max-width: 991px) {
+  h1{
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* Below is global style for photogrid slider */
+.slick-dots{
+  bottom: -45px;
+}
