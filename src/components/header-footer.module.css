@@ -6,8 +6,9 @@
 
 /* For the decrease size animation */
 /* Below need to work with Javascript */
-.navigation.nav-bg {
+.navigation-scrolled {
   background-color: #ffffff;
+  transition: .3s ease;
   padding: 15px 100px;
 }
 
@@ -19,8 +20,8 @@
 }
 
 @media (max-width: 991px) {
-  .navigation.nav-bg {
-    padding: 15px 20px;
+  .navigation-scrolled {
+    padding: 10px 20px;
   }
 }
 

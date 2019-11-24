@@ -1,8 +1,5 @@
 import React from "react"
 
-// Styles
-import photogridStyles from "./photogrid.module.css"
-
 // React-bootstrap
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -15,6 +12,10 @@ import "slick-carousel/slick/slick-theme.css"
 // React-slick
 import Slider from "react-slick"
 
+// Styles
+import photogridStyles from "./photogrid.module.css"
+import "./adjust-dots.css"
+
 // Assets
 import IT from "../components/images/IT.jpeg"
 import all_soc from "../components/images/all-soc.jpeg"
@@ -26,13 +27,15 @@ class PhotoGrid extends React.Component {
   render() {
     const settings = {
       speed: 500,
+      autoplay: true,
+      adaptiveHeight: true,
+      // Adaptive height property super important - prevents big ugly margin below carousel
       autoPlaySpeed: 30,
       swipeToSlide: true,
       dots: true,
       infinite: true,
       slidesToShow: 1,
       pauseOnHover: true,
-      dotsClass: "slick-dots"
     }
 
     return (
@@ -40,7 +43,7 @@ class PhotoGrid extends React.Component {
         <Container>
           <Row>
             <Col xs={12} className="text-center">
-              <h2 class="section-title">사진</h2>
+              <h2 className="section-title">사진</h2>
             </Col>
 
             <Col xs={12}>
@@ -70,7 +73,7 @@ class PhotoGrid extends React.Component {
                   <img
                     src={public_relations}
                     height="400px"
-                    className="mx-auto"
+                    className={`mx-auto ${photogridStyles.carouselImg}`}
                   ></img>
                 </div>
                 <div>

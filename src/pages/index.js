@@ -44,7 +44,7 @@ export default () => (
                     <li className="mb-3"><a href="#"><img alt="instagram" src={instagram}/></a></li>
                     <li className="mb-3"><a href="#"><img alt="twitter" src={twitter}/></a></li>
                 </ul>
-                <img className="img-fluid w-100 edu-bg-image" src={educatin_bg} alt="bg-image"/>
+                <img className={`img-fluid w-100 ${indexStyles.eduBgImage}`} src={educatin_bg} alt="bg-image"/>
             </section>
             {/* Hero area */}
 
