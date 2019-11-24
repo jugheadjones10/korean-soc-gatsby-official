@@ -22,9 +22,14 @@
   font-family: "BwNistaInt-xBd";
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body {  
   color: #4c4c4c;
   line-height: 1.2;
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   -webkit-font-smoothing: antialiased;

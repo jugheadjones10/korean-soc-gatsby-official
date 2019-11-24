@@ -26,16 +26,107 @@
 }
 
 /* Same animation doesn't play */
-.nav-link:hover{
-  font-size: 20px;
-} 
-
 .nav-link {
   font-family: "BwNistaInt-xBd";
   padding: 15px;
+  color: #000000
+}
+
+
+
+/* CodePen copied link animations */
+.nested-link:after,
+.nested-link:before {
+  transition: all .5s;
+}
+
+.nested-link:hover {
+  text-decoration: none;
+  color: #555;
+}
+
+.nested-link{
+  color: black;
+  padding: 5px;
+  position: relative;
+}
+
+.nested-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.nested-link {
+  transition: all 2s;
+}
+
+.nested-link:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+
+  /* You added the below */
+  animation: fill-out 1s forwards;
+}
+
+.nested-link:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+.nested-link:hover:after {
+  z-index: -10;
+  animation: fill 0.5s forwards;
+  -webkit-animation: fill 0.5s forwards;
+  -moz-animation: fill 0.5s forwards;
+  opacity: 1;
+}
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+@-webkit-keyframes fill-out {
+  0% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+   100% {
+    width: 0%;
+    height: 1px;
+  }
 }
 
 /* Footer */
 .bg-dark {
   background-color: #000000 !important;
 }
+

@@ -17,6 +17,9 @@ import Col from "react-bootstrap/Col"
 // Assets
 import logo from "./images/korea-society-logo.jpg"
 
+// Gatsby
+import { Link } from "gatsby"
+
 class HeaderFooter extends React.Component {
   constructor(props) {
     super(props)
@@ -66,8 +69,10 @@ class HeaderFooter extends React.Component {
             <Navbar.Collapse className="justify-content-end text-center">
               <Nav activeKey="#home">
                 <Nav.Item>
-                  <Nav.Link className={headFootStyles.navLink} href="#home">
-                    Home
+                  <Nav.Link href="#home" className={headFootStyles.navLink}>
+                    <Link to="/" className={headFootStyles.nestedLink}>
+                      Home
+                    </Link>
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
@@ -75,7 +80,9 @@ class HeaderFooter extends React.Component {
                     className={headFootStyles.navLink}
                     href="#about-society"
                   >
-                    한인회 소개
+                    <Link to="/members/" className={headFootStyles.nestedLink}>
+                      한인회 소개
+                    </Link>
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
@@ -83,12 +90,16 @@ class HeaderFooter extends React.Component {
                     className={headFootStyles.navLink}
                     href="#about-school"
                   >
-                    학교 소개
+                    <Link to="/members/" className={headFootStyles.nestedLink}>
+                      학교 소개
+                    </Link>
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link className={headFootStyles.navLink} href="#contact">
-                    연락
+                    <Link to="/members/" className={headFootStyles.nestedLink}>
+                      연락
+                    </Link>
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
