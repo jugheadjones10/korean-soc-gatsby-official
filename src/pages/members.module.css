@@ -1,0 +1,16 @@
+.background-pic{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.prez-face{
+    border-radius: 15px;
+    border-color: black;
+    width: 100%;
+}
+
+/* .start-para{
+  padding-left: 35px;
+  padding-right: 35px;
+} */

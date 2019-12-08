@@ -1,0 +1,39 @@
+.card-img{
+    border-radius: 10px;
+}
+
+.card{
+    border: 0;
+    position: relative;
+}
+
+.overlay-left{
+    position: absolute;
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: black;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.overlay-left:hover{
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.overlay-right{
+    position: absolute;
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: black;
+    opacity: 0;
+    right: 0;
+    transition: 0.6s;
+}
+
+.overlay-right:hover{
+    opacity: 1;
+    transition: 0.6s;
+}

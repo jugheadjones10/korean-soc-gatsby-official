@@ -27,17 +27,16 @@
 
 /* Same animation doesn't play */
 .nav-link {
-  font-family: "BwNistaInt-xBd";
+  font-family: 'Nanum Myeongjo', serif;
   padding: 15px;
   color: #000000
 }
 
 
-
 /* CodePen copied link animations */
 .nested-link:after,
 .nested-link:before {
-  transition: all .5s;
+  transition: all 1s;
 }
 
 .nested-link:hover {
@@ -65,7 +64,7 @@
 }
 
 .nested-link {
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .nested-link:after {
@@ -85,9 +84,9 @@
 
 .nested-link:hover:after {
   z-index: -10;
-  animation: fill 0.5s forwards;
-  -webkit-animation: fill 0.5s forwards;
-  -moz-animation: fill 0.5s forwards;
+  animation: fill 0.7s forwards;
+  -webkit-animation: fill 0.7s forwards;
+  -moz-animation: fill 0.7s forwards;
   opacity: 1;
 }
 

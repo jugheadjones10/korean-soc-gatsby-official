@@ -1,9 +1,5 @@
 import React from "react"
 
-// Styles (universal styles to be passed to all children components)
-import "bootstrap/dist/css/bootstrap.min.css"
-import "../styles/global.css"
-
 // Component-specific style
 import headFootStyles from "./header-footer.module.css"
 
@@ -31,7 +27,7 @@ class HeaderFooter extends React.Component {
   handleScroll() {
     console.log(window.pageYOffset)
 
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 80) {
       this.setState({
         navigationClass: headFootStyles.navigationScrolled
       })
@@ -90,15 +86,8 @@ class HeaderFooter extends React.Component {
                     className={headFootStyles.navLink}
                     href="#about-school"
                   >
-                    <Link to="/members/" className={headFootStyles.nestedLink}>
+                    <Link to="/school/" className={headFootStyles.nestedLink}>
                       학교 소개
-                    </Link>
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link className={headFootStyles.navLink} href="#contact">
-                    <Link to="/members/" className={headFootStyles.nestedLink}>
-                      연락
                     </Link>
                   </Nav.Link>
                 </Nav.Item>
@@ -117,7 +106,7 @@ class HeaderFooter extends React.Component {
                   <h5 className="text-secondary d-flex justify-content-center">
                     Email
                   </h5>
-                  <p className="text-white paragraph-lg font-secondary d-flex justify-content-center">
+                  <p className="text-white paragraph-lg d-flex justify-content-center">
                     steve.fruits@email.com
                   </p>
                 </Col>
@@ -125,7 +114,7 @@ class HeaderFooter extends React.Component {
                   <h5 className="text-secondary d-flex justify-content-center">
                     Phone
                   </h5>
-                  <p className="text-white paragraph-lg font-secondary d-flex justify-content-center">
+                  <p className="text-white paragraph-lg d-flex justify-content-center">
                     +880 2544 658 256
                   </p>
                 </Col>
@@ -133,7 +122,7 @@ class HeaderFooter extends React.Component {
                   <h5 className="text-secondary d-flex justify-content-center">
                     Address
                   </h5>
-                  <p className="text-white paragraph-lg font-secondary d-flex justify-content-center text-center">
+                  <p className="text-white paragraph-lg d-flex justify-content-center text-center">
                     21 Lower Kent Ridge Rd, Singapore 119077
                   </p>
                 </Col>
