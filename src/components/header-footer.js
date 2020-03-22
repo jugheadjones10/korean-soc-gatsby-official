@@ -12,6 +12,7 @@ import Col from "react-bootstrap/Col"
 
 // Assets
 import logo from "./images/korea-society-logo.jpg"
+import nuslogo from "./images/nus-logo-keyline-horizonal.jpg"
 
 // Gatsby
 import { Link } from "gatsby"
@@ -21,21 +22,23 @@ class HeaderFooter extends React.Component {
     super(props)
     this.state = { navigationClass: headFootStyles.navigation }
     this.handleScroll = this.handleScroll.bind(this)
-    console.log("FUCK")
+    this.onForumSelected = this.onForumSelected.bind(this)
   }
 
   handleScroll() {
-    console.log(window.pageYOffset)
-
+    
     if (window.pageYOffset > 80) {
+
       this.setState({
         navigationClass: headFootStyles.navigationScrolled
       })
+
     }else{
       this.setState({
         navigationClass: headFootStyles.navigation
       })
     }
+
   }
 
   componentDidMount() {
@@ -44,6 +47,10 @@ class HeaderFooter extends React.Component {
 
   componentWillUnmount() {
       window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  onForumSelected(){
+    window.open("http://www.white-tiger.xyz/");
   }
 
   render() {
@@ -55,6 +62,14 @@ class HeaderFooter extends React.Component {
               <img
                 src={logo}
                 width="50"
+                height="50"
+                alt="NUS Korean Society logo"
+              />
+            </Navbar.Brand>
+
+            <Navbar.Brand href="#home">
+              <img
+                src={nuslogo}
                 height="50"
                 alt="NUS Korean Society logo"
               />
@@ -89,6 +104,17 @@ class HeaderFooter extends React.Component {
                     <Link to="/school/" className={headFootStyles.nestedLink}>
                       학교 소개
                     </Link>
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link
+                    className={headFootStyles.navLink}
+                    href="#forum"
+                    onSelect={this.onForumSelected}
+                  >
+                    <span className={headFootStyles.nestedLink}>
+                      게시판
+                    </span>
                   </Nav.Link>
                 </Nav.Item>
               </Nav>

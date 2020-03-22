@@ -1,5 +1,5 @@
 .navigation {
-  padding: 40px 130px;
+  padding: 20px 130px;
   transition: .3s ease;
   background-color: #ffffff;
 }
@@ -9,7 +9,7 @@
 .navigation-scrolled {
   background-color: #ffffff;
   transition: .3s ease;
-  padding: 15px 100px;
+  padding: 12px 100px;
 }
 
 @media (max-width: 991px) {
@@ -32,11 +32,10 @@
   color: #000000
 }
 
-
 /* CodePen copied link animations */
 .nested-link:after,
 .nested-link:before {
-  transition: all 1s;
+  transition: all 0.3s;
 }
 
 .nested-link:hover {
@@ -64,7 +63,7 @@
 }
 
 .nested-link {
-  transition: all 1s;
+  transition: all 0.3s;
 }
 
 .nested-link:after {
@@ -84,9 +83,9 @@
 
 .nested-link:hover:after {
   z-index: -10;
-  animation: fill 0.7s forwards;
-  -webkit-animation: fill 0.7s forwards;
-  -moz-animation: fill 0.7s forwards;
+  animation: fill 0.3s forwards;
+  -webkit-animation: fill 0.3s forwards;
+  -moz-animation: fill 0.3s forwards;
   opacity: 1;
 }
 

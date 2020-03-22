@@ -1,8 +1,119 @@
 .hero-area {
-  padding: 156px 0 200px;
-  z-index: 0;
-  /* position: relative; */
+  padding-bottom: 180px;
 }
+
+.hero-area:before {
+  background-image: url("../components/images/all-soc.jpeg");
+  background-position: center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  transition: all .5s;
+
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.hero-area:hover:before{
+  background-size: 105%;
+  transition: all .5s;
+}
+
+/* H1 Website title animations */
+.h1-styles{
+  padding: 5px;
+  display: inline;
+  position: relative;
+  transition: all 0.7s;
+}
+
+/* CodePen copied link animations */
+.h1-styles:after,
+.h1-styles:before {
+  transition: all 0.7s;
+}
+
+.hero-area:hover .h1-styles {
+  z-index: 1;
+}
+
+.h1-styles:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* margin: auto; */
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: rgb(255, 255, 255);
+  height: 3px;
+
+  /* text-align: left; */
+  margin: 0;
+
+  /* You added the below */
+  animation: fill-out 1s forwards;
+}
+
+
+.hero-area:hover .h1-styles:after {  
+  z-index: -10;
+  animation: fill 0.7s forwards;
+  -webkit-animation: fill 0.7s forwards;
+  -moz-animation: fill 0.7s forwards;
+}
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 3px;
+  }
+  50% {
+    width: 100%;
+    height: 3px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fill-out {
+  0% {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+  }
+  50% {
+    width: 100%;
+    height: 3px;
+  }
+   100% {
+    width: 0%;
+    height: 3px;
+  }
+}
+
+/* End of website title animations */
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
 
 .mb-80{
   margin-bottom: 80px;
@@ -16,4 +127,52 @@
 
 .hover-shadow:hover {
   box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
+}
+
+@media(max-width: 1010px){
+  .hero-area:before{
+    background-size: 130%;
+    transition: all 0.5s;
+  }
+
+  .hero-area:hover:before{
+    background-size: 100%;
+    transition: all 0.5s;
+  }
+}
+
+@media(max-width: 860px){
+  .hero-area:before{
+    background-size: 160%;
+    transition: all 0.5s;
+  }
+
+  .hero-area:hover:before{
+    background-size: 130%;
+    transition: all 0.5s;
+  }
+}
+
+@media(max-width: 700px){
+  .hero-area:before{
+    background-size: 190%;
+    transition: all 0.5s;
+  }
+
+  .hero-area:hover:before{
+    background-size: 160%;
+    transition: all 0.5s;
+  }
+}
+
+@media(max-width: 700px){
+  .hero-area:before{
+    background-size: 250%;
+    transition: all 0.5s;
+  }
+
+  .hero-area:hover:before{
+    background-size: 200%;
+    transition: all 0.5s;
+  }
 }

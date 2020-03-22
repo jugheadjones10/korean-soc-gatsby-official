@@ -6,6 +6,7 @@ import PhotoGrid from "../components/photogrid"
 
 // Styles
 import indexStyles from "./index.module.css"
+import headerFooterStyles from "../components/header-footer.module.css"
 
 // React-bootstrap
 import Container from "react-bootstrap/Container"
@@ -27,35 +28,25 @@ export default () => (
   <div>
     <HeaderFooter>
       {/* Hero area */}
-      <section
-        className={`${indexStyles.heroArea} bg-white px-5 position-relative`}
-      >
+
+      <section className={`${indexStyles.heroArea} section page-title position-relative`}>
+        <div className={indexStyles.overlay}></div>
         <Container>
           <Row>
-            <Col md={6} className="my-5 my-md-0 d-flex align-items-center">
-              <h1>
-                NUS
-                <br />
-                한인회
-              </h1>
-            </Col>
-            <Col md={6} className="d-none d-md-flex justify-content-end">
-              <img
-                alt="korean society lion"
-                width="400"
-                src={modified_logo}
-              ></img>
+            <Col xs={12} className="text-center">
+              <h1 className={`${indexStyles.h1Styles} text-white`}>NUS 한인회</h1>
             </Col>
           </Row>
         </Container>
-        <ul className="ml-5 mt-3 list-unstyled">
+
+        <ul className="ml-5 mt-5 list-unstyled">
           <li className="mb-3">
             <a href="https://www.facebook.com/groups/258391824278076/">
               <img alt="facebook" src={facebook} />
             </a>
           </li>
           <li className="mb-3">
-            <a href="#">
+            <a href="https://www.instagram.com/nus__ks/">
               <img alt="instagram" src={instagram} />
             </a>
           </li>
@@ -71,6 +62,35 @@ export default () => (
           alt="bg-image"
         />
       </section>
+
+      {/* <section
+        className={`${indexStyles.heroArea} bg-white px-5 position-relative`}
+      >
+        <Container>
+          <Row>
+            <Col md={12} className="d-flex justify-content-center align-items-center">
+              <h1>
+                NUS
+                <br />
+                한인회
+              </h1>
+            </Col>
+            <Col md={6} className="d-none d-md-flex justify-content-end">
+              <img
+                alt="korean society lion"
+                width="400"
+                src={modified_logo}
+              ></img>
+            </Col>
+          </Row>
+        </Container>
+        
+        <img
+          className='img-fluid w-100 edu-bg-image'
+          src={educatin_bg}
+          alt="bg-image"
+        />
+      </section> */}
       {/* Hero area */}
 
       {/* Introduction */}

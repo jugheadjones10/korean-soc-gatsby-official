@@ -20,7 +20,7 @@ p, .paragraph {
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
-  font-family: 'Nanum Myeongjo', serif;
+  /* font-family: 'Nanum Myeongjo', serif; */
 }
 
 .paragraph-lg {
@@ -29,12 +29,12 @@ p, .paragraph {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family:  'Nanum Myeongjo', serif;
+  /* font-family:  'Nanum Myeongjo', serif; */
   line-height: 1.2;
 }
 
 .font-secondary {
-  font-family: 'Nanum Myeongjo', serif;
+  /* font-family: 'Nanum Myeongjo', serif; */
 }
 
 .section{
@@ -44,7 +44,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
   margin-bottom: 80px;
-  /* font-family:  'Playfair Display', serif; */
 }
 
 .page-title{
