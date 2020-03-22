@@ -67,7 +67,7 @@ class HeaderFooter extends React.Component {
               />
             </Navbar.Brand>
 
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="#home" className={headFootStyles.nusLogo}>
               <img
                 src={nuslogo}
                 height="50"

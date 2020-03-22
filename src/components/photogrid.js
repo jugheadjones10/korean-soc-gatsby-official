@@ -29,13 +29,14 @@ class PhotoGrid extends React.Component {
       speed: 500,
       autoplay: true,
       adaptiveHeight: true,
+      arrows: true,
       // Adaptive height property super important - prevents big ugly margin below carousel
-      autoPlaySpeed: 30,
+      autoPlaySpeed: 15,
       swipeToSlide: true,
       dots: true,
       infinite: true,
       slidesToShow: 1,
-      pauseOnHover: true,
+      pauseOnHover: false,
     }
 
     return (

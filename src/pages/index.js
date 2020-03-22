@@ -3,6 +3,7 @@ import React from "react"
 // Components
 import HeaderFooter from "../components/header-footer"
 import PhotoGrid from "../components/photogrid"
+import NukaPhotoGrid from "../components/nuka-photo-grid"
 
 // Styles
 import indexStyles from "./index.module.css"
@@ -270,7 +271,8 @@ export default () => (
       {/* Activities */}
 
       {/* Pictures */}
-      <PhotoGrid />
+      {/* <PhotoGrid /> */}
+      <NukaPhotoGrid/>
       {/* Pictures */}
     </HeaderFooter>
   </div>
