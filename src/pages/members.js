@@ -50,7 +50,7 @@ class Members extends React.Component {
         <section className="section pt-5">
           <Container>
             <Row>
-              <Col className="text-center" xs={12} lg={8}>
+              <Col className="text-center" xs={12} lg={12}>
                 <p className="paragraph-lg">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -64,7 +64,7 @@ class Members extends React.Component {
                 </p>
               </Col>
 
-              <Col lg={4} className="text-center d-lg-block d-none">
+              {/* <Col lg={4} className="text-center d-lg-block d-none">
                 <div className="position-relative mb-4">
                   <img
                     src={prez}
@@ -74,7 +74,7 @@ class Members extends React.Component {
                 </div>
                 <h4>김한결</h4>
                 <p className="text-light font-secondary">학부생 회장</p>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
           <img
