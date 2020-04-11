@@ -8,8 +8,11 @@
   margin-right: auto;
 }
 
+.social-media > li{
+  display: inline-block;
+}
+
 /* For the decrease size animation */
-/* Below need to work with Javascript */
 .navigation-scrolled {
   background-color: #ffffff;
   transition: .3s ease;

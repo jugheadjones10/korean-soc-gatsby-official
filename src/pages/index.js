@@ -2,12 +2,10 @@ import React from "react"
 
 // Components
 import HeaderFooter from "../components/header-footer"
-import PhotoGrid from "../components/photogrid"
 import NukaPhotoGrid from "../components/nuka-photo-grid"
 
 // Styles
 import indexStyles from "./index.module.css"
-import headerFooterStyles from "../components/header-footer.module.css"
 
 // React-bootstrap
 import Container from "react-bootstrap/Container"
@@ -19,7 +17,7 @@ import Card from "react-bootstrap/Card"
 import twitter from "../components/images/twitter.svg"
 import facebook from "../components/images/facebook.svg"
 import instagram from "../components/images/instagram.svg"
-import modified_logo from "../components/images/korea-society-logo-modified.jpg"
+//import modified_logo from "../components/images/korea-society-logo-modified.jpg"
 import medal from "../components/images/medall.svg"
 import basketball from "../components/images/basketball.svg"
 import camera from "../components/images/camera.svg"
@@ -40,6 +38,7 @@ export default () => (
           </Row>
         </Container>
 
+        {/* The below is there to maintain the height */}
         <ul className="ml-5 mt-5 list-unstyled">
           <li className="mb-3">
             <a href="https://www.facebook.com/groups/258391824278076/">
@@ -57,45 +56,18 @@ export default () => (
             </a>
           </li>
         </ul>
+
         <img
           className='img-fluid w-100 edu-bg-image'
           src={educatin_bg}
           alt="bg-image"
         />
       </section>
-
-      {/* <section
-        className={`${indexStyles.heroArea} bg-white px-5 position-relative`}
-      >
-        <Container>
-          <Row>
-            <Col md={12} className="d-flex justify-content-center align-items-center">
-              <h1>
-                NUS
-                <br />
-                한인회
-              </h1>
-            </Col>
-            <Col md={6} className="d-none d-md-flex justify-content-end">
-              <img
-                alt="korean society lion"
-                width="400"
-                src={modified_logo}
-              ></img>
-            </Col>
-          </Row>
-        </Container>
-        
-        <img
-          className='img-fluid w-100 edu-bg-image'
-          src={educatin_bg}
-          alt="bg-image"
-        />
-      </section> */}
       {/* Hero area */}
 
       {/* Introduction */}
-      <section className="section">
+      {/* Might be good to write sth here for future batches */}
+      {/* <section className="section">
         <Container>
           <Row>
             <Col lg={12} className="text-center">
@@ -111,15 +83,15 @@ export default () => (
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur.
               </p>
-              {/* <a href="about.html" class="btn btn-transparent">more</a> */}
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
       {/* Introduction */}
 
       {/* History */}
-      <section className="section position-relative">
+      {/* Same thing here - might be able to convince future society president to write something here */}
+      {/* <section className="section position-relative">
         <Container>
           <Row>
             <Col lg={12} className="text-center">
@@ -200,7 +172,7 @@ export default () => (
           src={educatin_bg}
           alt="bg-image"
         />
-      </section>
+      </section> */}
       {/* History */}
 
       {/* Activities */}
@@ -215,7 +187,7 @@ export default () => (
               <Card className={`${indexStyles.hoverShadow} shadow`}>
                 <Card.Body className="text-center px-4 py-5">
                   <img className="mb-5 d-inline-block" width="50" src={medal} />
-                  <h4 className="mb-4">술</h4>
+                  <h4 className="mb-4">종강파티</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -233,7 +205,7 @@ export default () => (
                     width="50"
                     src={camera}
                   />
-                  <h4 className="mb-4">활동</h4>
+                  <h4 className="mb-4">봉사</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -251,7 +223,7 @@ export default () => (
                     width="50"
                     src={basketball}
                   />
-                  <h4 className="mb-4">운동</h4>
+                  <h4 className="mb-4">토크</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -271,7 +243,6 @@ export default () => (
       {/* Activities */}
 
       {/* Pictures */}
-      {/* <PhotoGrid /> */}
       <NukaPhotoGrid/>
       {/* Pictures */}
     </HeaderFooter>

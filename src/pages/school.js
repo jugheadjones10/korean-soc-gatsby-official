@@ -41,11 +41,97 @@ class School extends React.Component {
               </Col>
             </Row>
           </Container>
+        </section>
+
+        <section className="section pt-5">
+          <Container>
+            <Row>
+              <Col xs={12} lg={12}>
+                <p className="paragraph-lg">
+                  싱가포르국립대학 (National University of Singapore, 또는 NUS로 약칭)은 1905년에 설립된 싱가포르의 가장 오래된 국립 대학입니다. 현재 3개의 캠퍼스, 12개의 단과대학과 4개의 대학원, 그리고 26개의 연구소에서 약 30000명의 학부생과 10000명의 대학원생들이 학업에 매진하고 있습니다. 
+                  2020년 QS Rankings 기준, NUS는 아시아 1위, 세계 11위 대학으로서 이름을 올리며 흔들림 없는 아시아 최상위 대학이라는 위상을 유지하고 있습니다. 
+                </p>
+              </Col>
+            </Row>
+          </Container>
           <img
-            className="img-fluid w-100 edu-bg-image"
+            className="w-100 edu-bg-image"
             src={educatin_bg}
             alt="bg-image"
           />
+        </section>
+
+
+        <section className="section position-relative">
+          <img
+            className={`img-fluid w-100 ${schoolStyles.specialBg}`}
+            src={educatin_bg}
+            alt="bg-image"
+          />
+          <Container>
+            <Row>
+              <Col lg={12} className="text-center">
+                <h2 class="section-title">대학 학부 (Faculties)</h2>
+              </Col>
+              <Col lg={12} className="text-center">
+                <p class="paragraph-lg">
+                  Faculty of Law (법학부)<br/>
+                  Faculty of Engineering (공학부)<br/>
+                  Faculty of Science (이학부)<br/>
+                  School of Computing (컴퓨터학부)<br/>
+                  School of Design and Environment (디자인환경학부)<br/>
+                  Yong Loo Lin School of Medicine (의학부)<br/>
+                  Faculty of Dentistry (치의학부)<br/>
+                  Business School (경영학부)<br/>
+                  Lee Kuan Yew School of Public Policy (공공정책학부)<br/>
+                  Faculty of Arts and Social Sciences (인문사회학부)<br/>
+                  Yong Siew Toh Conservatory of Music (음악학부)<br/>
+                </p>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+
+        <section className="section position-relative">
+          <Container>
+            <Row>
+              <Col lg={12} className="text-center">
+                <h2 class="section-title">대학 시설 (Facilities)</h2>
+              </Col>
+              <Col lg={12} className="text-center">
+                <p class="paragraph-lg">
+                  <b><h3>캠퍼스</h3></b><br/>
+                  Kent Ridge Campus<br/>
+                  Bukit Timah Campus<br/>
+                  Outram Campus<br /><br/>
+
+                  <b><h3>기숙사</h3></b><br/>
+
+                  <b>Halls: </b>
+                  Eusoff Hall,
+                  Kent Ridge Hall,
+                  King Edward VII Hall,
+                  Raffles Hall,
+                  Sheares Halll,
+                  Temasek Hall
+                  <br/><br/>
+                  
+                 <b>Residences: </b>
+                  Prince George’s Park Residences,
+                  U-Town Residence (대학원생 전용)
+                  <br/><br/>
+                  
+
+                  <b>Residential Colleges: </b>
+                  Cinnamon College (University Scholars Program),
+                  Tembusu College,
+                  College of Peter and Alice Tan,
+                  Residential College 4,
+                  Ridge View Residential College
+                </p>
+              </Col>
+            </Row>
+          </Container>
         </section>
 
         <section class="section position-relative">
@@ -270,50 +356,6 @@ class School extends React.Component {
                     </p>
                   </li>
                 </ul>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-
-        <section className="section position-relative">
-          <img
-            className={`img-fluid w-100 ${schoolStyles.specialBg}`}
-            src={educatin_bg}
-            alt="bg-image"
-          />
-          <Container>
-            <Row>
-              <Col lg={12} className="text-center">
-                <h2 class="section-title">Faculty</h2>
-              </Col>
-              <Col lg={12} className="text-center">
-                <p class="paragraph-lg">
-                  Infinite possibilities. We offer a global and Asian experience
-                  that is broad, deep and rigorous. An NUS education is
-                  recognised as among the best in Asia, and the world. Whichever
-                  undergraduate or graduate programme you choose, your
-                  experience will be intellectually fulfilling within and
-                  outside the classroom.
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-
-        <section className="section position-relative">
-          <Container>
-            <Row>
-              <Col lg={12} className="text-center">
-                <h2 class="section-title">기숙사</h2>
-              </Col>
-              <Col lg={12} className="text-center">
-                <p class="paragraph-lg">
-                  Your friends at NUS will go on to become the architects,
-                  designers, doctors, engineers, entrepreneurs, lawyers,
-                  musicians, writers and politicians of their generation. You
-                  will bond with them over meals, sports, seminars and community
-                  activities. Living on campus is exciting and rewarding.
-                </p>
               </Col>
             </Row>
           </Container>

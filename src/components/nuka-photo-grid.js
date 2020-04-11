@@ -22,11 +22,11 @@ class NukaPhotoGrid extends React.Component {
             <Carousel 
         
                 renderCenterLeftControls={({ previousSlide }) => (
-                    <img onClick={previousSlide} src={rightArrow} width={50} style={{transform: "scaleX(-1)", padding:"10px"}}/>
+                    <img onClick={previousSlide} src={rightArrow} width={50} alt={""} style={{transform: "scaleX(-1)", padding:"10px"}}/>
                 )}
 
                 renderCenterRightControls={({ nextSlide }) => (
-                    <img onClick={nextSlide} src={rightArrow} width={50} style={{padding:"10px"}}/>
+                    <img onClick={nextSlide} src={rightArrow} width={50} alt={""} style={{padding:"10px"}}/>
                 )}
 
                 defaultControlsConfig={{
@@ -41,11 +41,11 @@ class NukaPhotoGrid extends React.Component {
                 width="50%" 
                 style={{marginLeft: "auto", marginRight: "auto", marginBottom: "50px"}}>
 
-                <img src={IT} />
-                <img src={all_soc} />
-                <img src={heads} />
-                <img src={public_relations} />
-                <img src={welfare} />
+                <img src={IT} alt={""}/>
+                <img src={all_soc} alt={""}/>
+                <img src={heads} alt={""}/>
+                <img src={public_relations} alt={""}/>
+                <img src={welfare} alt={""}/>
             </Carousel>
         )
     }
