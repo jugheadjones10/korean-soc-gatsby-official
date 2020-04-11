@@ -45,9 +45,15 @@ class Members extends React.Component {
               </Col>
             </Row>
           </Container>
+          <img
+            className="w-100 edu-bg-image"
+            src={educatin_bg}
+            alt="bg-image"
+          />
         </section>
 
-        <section className="section pt-5">
+        {/* Again, future batches might want to write a little something here */}
+        {/* <section className="section pt-5">
           <Container>
             <Row>
               <Col className="text-center" xs={12} lg={12}>
@@ -63,18 +69,6 @@ class Members extends React.Component {
                   occaecat cupidatat non proident.
                 </p>
               </Col>
-
-              {/* <Col lg={4} className="text-center d-lg-block d-none">
-                <div className="position-relative mb-4">
-                  <img
-                    src={prez}
-                    alt="society president"
-                    class={`${memberStyles.prezFace} mt-5 mt-lg-0 shadow-lg`}
-                  />
-                </div>
-                <h4>김한결</h4>
-                <p className="text-light font-secondary">학부생 회장</p>
-              </Col> */}
             </Row>
           </Container>
           <img
@@ -82,7 +76,7 @@ class Members extends React.Component {
             src={educatin_bg}
             alt="bg-image"
           />
-        </section>
+        </section> */}
 
         <section
           className="section bg-cover"
