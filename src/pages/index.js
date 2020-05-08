@@ -21,6 +21,9 @@ import instagram from "../components/images/instagram.svg"
 import medal from "../components/images/medall.svg"
 import basketball from "../components/images/basketball.svg"
 import camera from "../components/images/camera.svg"
+import community from "../components/images/community.png"
+import heart from "../components/images/heart.svg"
+import talk from "../components/images/talk.svg"
 import educatin_bg from "../components/images/education-bg.png"
 
 export default () => (
@@ -186,12 +189,10 @@ export default () => (
             <Col md={4} className="mb-4 mb-md-0">
               <Card className={`${indexStyles.hoverShadow} shadow`}>
                 <Card.Body className="text-center px-4 py-5">
-                  <img className="mb-5 d-inline-block" width="50" src={medal} />
-                  <h4 className="mb-4">종강파티</h4>
+                  <img className="mb-5 d-inline-block" width="50" src={community} />
+                  <h4 className="mb-4">교류활동</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    신입생환영회, 개강/종강파티, 문화교류, 캠퍼스투어
                   </p>
                 </Card.Body>
               </Card>
@@ -203,13 +204,11 @@ export default () => (
                   <img
                     className="mb-5 d-inline-block"
                     width="50"
-                    src={camera}
+                    src={heart}
                   />
-                  <h4 className="mb-4">봉사</h4>
+                  <h4 className="mb-4">봉사활동</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    한인사회 봉사, 지역사회 봉사
                   </p>
                 </Card.Body>
               </Card>
@@ -221,13 +220,11 @@ export default () => (
                   <img
                     className="mb-5 d-inline-block"
                     width="50"
-                    src={basketball}
+                    src={talk}
                   />
-                  <h4 className="mb-4">토크</h4>
+                  <h4 className="mb-4">토크/이벤트 기획</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    명사 초청 강연, 기업 취업 설명회, 투표 독려 이벤트, 시험기간 Welfare Pack
                   </p>
                 </Card.Body>
               </Card>

@@ -55,7 +55,7 @@ class HeaderFooter extends React.Component {
   }
 
   onForumSelected(){
-    window.open("http://www.white-tiger.xyz/");
+    window.open("http://www.white-tiger.xyz/forum");
   }
 
   render() {
