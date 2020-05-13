@@ -6,9 +6,11 @@ html{
 }
 
 body {  
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   color: #4c4c4c;
   line-height: 1.2;
-  overflow-x: hidden;
   font-family: 'Nanum Myeongjo', serif;
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
