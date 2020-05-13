@@ -230,11 +230,12 @@ export default () => (
             </Col>
           </Row>
         </Container>
-        <img
+        {/* <img
           className='img-fluid w-100 edu-bg-image'
           src={educatin_bg}
           alt="bg-image"
-        />
+        /> */}
+        {/* The above will push elements down when the screen gets big (Desktop) and a weird double scrollbar error will appear*/}
       </section>
       {/* Activities */}
 
