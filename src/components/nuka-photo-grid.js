@@ -23,15 +23,16 @@ const smallMediaQuery = '(max-width: 720px)'
 class NukaPhotoGrid extends React.Component {
     constructor(props) {
         super(props)
-        var mql = window.matchMedia(smallMediaQuery)
-        this.state = { small: mql.matches }
+        this.state = { small: false }
+    }
 
+    componentDidMount(){
+        var mql = window.matchMedia(smallMediaQuery)
         mql.addListener(() => {
             this.setState({
                 small: mql.matches
             })
         })
-
     }
 
     render() {
