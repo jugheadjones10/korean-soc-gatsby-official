@@ -55,7 +55,7 @@ class HeaderFooter extends React.Component {
   }
 
   onForumSelected(){
-    window.open("http://nuskoreasociety.org/forum");
+    window.open("https://nuskoreasociety.org/forum");
   }
 
   render() {
